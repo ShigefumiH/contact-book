@@ -15,7 +15,7 @@ class AddAvatarFilename extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-//            $table->string('avatar_filename', 100);
+            $table->string('avatar_filename', 100);
         });
     }
 
@@ -28,7 +28,7 @@ class AddAvatarFilename extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-//            $table->dropColumn('avatar_filename');
+            $table->dropColumn('avatar_filename');
         });
     }
 }
